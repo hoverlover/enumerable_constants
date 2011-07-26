@@ -1,0 +1,12 @@
+# Enumerable Contstants
+
+This gem can be used for situations where enumerating over constant values is desired.
+This facilitates keeping the code DRY by keeping the constant values defined in one place, and
+still having the ability to enumerate over their values wherever they are needed.
+
+## Example use cases
+
+* defining constants for possible field values in an AR object while using the values in a
+  `validates_inclusion_of` validation
+* defining constants for select box values in a view helper and using this gem to allow them to be
+  enumerated over in the select tag
